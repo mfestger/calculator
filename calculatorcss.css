@@ -4,23 +4,33 @@ body {
     max-width: 500px;
     background-color: burlywood;
     padding: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
 }
 
 #container {
     background-color: rgba(0, 0, 0, .3);
-    border: solid black 5px;
-    padding-left: 18px;
+    margin-top: 10%;
+    padding: 5%;
+    height: 300px;
+    width: 400px;
 }
 
 input[type="button"] {
     width: 20%;
+    height: 20%;
     margin: 0;
     box-sizing: content-box;
-    
+    font-size: 90px;
+
 }
+
 input[type="text"] {
     width: 30%;
     margin-bottom:5%;
+    margin-top: 10%;
 }
 
 #2 {
