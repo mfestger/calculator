@@ -110,7 +110,7 @@ input[type="text"] {
     margin-bottom:5%;
     box-sizing: border-box;
     font-family: 'Audiowide', cursive;
-    font-size: 4.3vw;
+    font-size: 3.3vw;
     color: 	var(--color4);
 }
 #row1 input:nth-child(2) {
