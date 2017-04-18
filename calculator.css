@@ -14,13 +14,24 @@ html {
   box-sizing: inherit;
 }
 
-.trans{
+
+*:after {
+  animation-play-state: paused;
 }
 
 body {
     font-family: helvetica, sans-serif;
     background-color: var(--color4);
-    background-image: url('http://p1.pichost.me/i/11/1344899.jpg');
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation: show-background 3s .5s cubic-bezier(0,1,.5,1) reverse;
+    background: url(https://cssanimation.rocks/images/random/space.jpg) no-repeat center;
+    background-size: cover;
+    /*background-image: url('http://p1.pichost.me/i/11/1344899.jpg');*/
     padding: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -30,10 +41,12 @@ body {
 }
 
 #container {
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, .2);
     margin: 0 auto;
+    margin-top: 10%;
     min-width: 300px;
     max-width: 50%;
+    max-height: 50%;
     padding: 3%;
     height: 100%;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
@@ -65,7 +78,8 @@ input[type="button"] {
     border-right: 1px solid rgb(222, 184, 135, .5);
     box-sizing: content-box;
     background-color: transparent;
-    color: #222;
+    color: rgb(34, 34, 34, .5);
+    text-shadow: #bbb 0px 0px 1px;
     font-size: 2em;
     font-family: helvetica, sans-serif;
     font-weight: 100;
@@ -78,8 +92,9 @@ input[type="button"] {
 }
 
 input[type="button"]:hover {
-  color: #ddd;
-  box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+  color: #bbb;
+  box-shadow: 0 0px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+  border-radius: 5px;
 }
 
 
@@ -88,14 +103,18 @@ input:first-child[type="button"]{
 }
 
 input[type="text"] {
-    width: calc(90% / 3);
+    width: 40%;
     height: 75px;
     border: none;
     background-color: transparent;
     margin-bottom:5%;
     box-sizing: border-box;
-    font-size: 4vw;
+    font-family: 'Audiowide', cursive;
+    font-size: 4.3vw;
     color: 	var(--color4);
+}
+#row1 input:nth-child(2) {
+    width: 8%;
 }
 
 #row1 {
@@ -108,4 +127,18 @@ input[type="text"] {
 
 #row2 input {
     border-top: 1px solid rgb(222, 184, 135, .5);
+}
+
+@keyframes show-background {
+  0% {
+    opacity: 0;
+    transform: none;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(3)
+  }
 }
