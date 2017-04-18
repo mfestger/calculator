@@ -3,34 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculator</title>
-    <link rel="stylesheet" href="calculatorcss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
+    <link rel="stylesheet" href="calculator.css">
 </head>
 <body>
 <div id="container">
-    <div id="1">
-        <input type="text">
-        <input type="text">
-        <input type="text">
+    <div class="row" id="row1">
+        <input type="text" disabled>
+        <input type="text" disabled>
+        <input type="text" disabled>
     </div>
-    <div id="2">
+    <div class="row" id="row2">
         <input type="button" value="1">
         <input type="button" value="2">
         <input type="button" value="3">
         <input type="button" value="+">
     </div>
-    <div id="3">
+    <div class="row" id="row3">
         <input type="button" value="4">
         <input type="button" value="5">
         <input type="button" value="6">
         <input type="button" value="-">
     </div>
-    <div id="4">
+    <div class="row" id="row4">
         <input type="button" value="7">
         <input type="button" value="8">
         <input type="button" value="9">
         <input type="button" value="x">
     </div>
-    <div id="5">
+    <div id="row5">
         <input type="button" value="C">
         <input type="button" value="0">
         <input type="button" value="=">
