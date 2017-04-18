@@ -57,11 +57,17 @@ body {
 
 h1 {
     position: fixed;
-    top : 90%;
+    top : 93.5%;
     right: 85%;
     font-size: 5vh;
-    color: #ddd;
+    color: rgba(221, 221, 221, .1);
     font-weight: 100;
+
+    transition-duration: 1.5s;
+}
+h1:hover {
+    color: #ddd;
+    transform: translate(0, -30px);
 }
 
 input {
