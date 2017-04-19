@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculator</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
-    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="calculatorcss.css">
+    <link href="https://fonts.googleapis.com/css?family=UnifrakturCook:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
+<!--<button id="wallpaperGenerator" i="glyphicon glyphicon-random"></button>-->
+<i id="wallpaperGenerator" class="fa fa-random fa-3x" style="color: white" aria-hidden="true"></i>
+
 <div id="container">
-    <h1>numi</h1>
     <div class="row" id="row1">
         <input type="text" disabled>
         <input type="text" disabled>
@@ -31,17 +34,15 @@
         <input type="button" value="7">
         <input type="button" value="8">
         <input type="button" value="9">
-        <input type="button" value="×" op="*">
+        <input type="button" value="&#0215;" op="*">
     </div>
     <div id="row5">
         <input type="button" value="c">
         <input type="button" value="0">
         <input type="button" value="=" op="Enter">
-        <input type="button" value="÷" op="/">
+        <input type="button" value="&#0247;" op="/">
     </div>
-    <input type="button" value="Backspace" hidden>
 </div>
-
 <script src="js/calculator.js">
 </script>
 </body>

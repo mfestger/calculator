@@ -1,0 +1,90 @@
+:root {
+    --color1 : #155125;
+    --color2 : #509462;
+    --color3 : #800000;
+    --color4 : grey;
+
+}
+body {
+    font-family: helvetica, sans-serif;
+    padding: 0;
+    background-color: var(--color4);
+    background-image: url("http://i.imgur.com/5laWd80.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+}
+
+
+#container {
+    background-color: rgba(0, 0, 0, .3);
+    margin: 0 auto;
+    margin-top: 5%;
+    min-width: 250px;
+    max-width: 50%;
+    padding: 5%;
+    height: 100%;
+    width: 400px;
+    border-radius: 25px;
+    position: relative;
+}
+
+
+input[type="button"] {
+    width: calc(97% / 4);
+    height: 3.5rem;
+    margin: -2px;
+    padding: 0;
+    border: none;
+    border-bottom: 1px solid var(--color4);
+    border-right: 1px solid var(--color4);
+    box-sizing: content-box;
+    background-color: transparent;
+    color: white;
+    font-size: 2em;
+    font-family: helvetica, sans-serif;
+    font-weight: 100;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    outline: none;
+
+}
+
+input:first-child[type="button"]{
+    border-left: 1px solid var(--color4);
+}
+
+#row2 input {
+    border-top: 1px solid var(--color4);
+}
+
+input[type="text"] {
+    width: calc(90% / 3);
+    height: 3.5em;
+    border: none;
+    background-color: transparent;
+    margin-bottom:5%;
+    margin-top: 10%;
+    box-sizing: content-box;
+    font-size: 1.5em;
+    color: 	white;
+
+}
+
+#row1 {
+    padding-left: 13%;
+}
+
+input[type="button"]:hover {
+    color: #bbb;
+    box-shadow: 0 0px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+    border-radius: 3px;
+}
+
+
+
